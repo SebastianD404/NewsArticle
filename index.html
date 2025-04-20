@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Summoner's Herald</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgb(233, 219, 183);
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            font-weight: bold;
+            padding: 50px 0;
+            border-bottom: 3px solid #333;
+            background-image: url('League-of-Legends image.webp'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        
+        }
+
+        .subheader {
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .article {
+            background: rgb(243, 239, 202);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .news-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .news-content {
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        .side-image {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        #esports {
+            height: 45%;
+        }
+
+        #coach {
+            height: 33.5%;
+        }
+        
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 1em;
+            font-style: italic;
+            border-top: 3px solid #444;
+        }
+        @media (max-width: 480px) { /* Mobile */
+            .content {
+                grid-template-columns: 1fr;
+            }
+            header {
+                font-size: 1.2em;
+                height: 100px;
+            }
+            .news-title {
+                font-size: 1.5em;
+            }
+            .news-content {
+                font-size: 1em;
+            }
+            .side-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 1200px) { /* Tablets */
+            .content {
+                grid-template-columns: 1fr;
+            }
+            header {
+                height: 120px;
+            }
+            .news-title {
+                font-size: 1.7em;
+            }
+        }
+
+        @media (min-width: 1201px) { /* Desktops */
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+            header {
+                height: 150px;
+            }
+            .news-title {
+                font-size: 1.8em;
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <div class="subheader">Your Daily Source for League of Legends News</div>
+
+        <div class="content">
+            <div class="article">
+                <div class="news-title">The Rise of League of Legends</div>
+                <div class="news-content">
+                    <p>League of Legends (LoL) continues to dominate the gaming world as one of the most played multiplayer online battle arena (MOBA) games. Since its launch in 2009 by Riot Games, it has grown into a global phenomenon, attracting millions of active players. The game offers a dynamic, competitive experience with a roster of over 160 champions, each with their own unique abilities and lore. Players are drawn to the game’s strategic depth, fast-paced gameplay, and constant updates that keep the experience fresh.</p>
+                    <p>Riot Games' continuous support has played a key role in LoL's success. Regular balance updates, new champion releases, and seasonal events keep the game engaging for new and veteran players alike. Additionally, Riot has expanded its universe through animated series, comics, and spin-off games, further solidifying its place in gaming history. The ongoing narrative expansion has allowed players to immerse themselves even further into the game's lore, strengthening their connection with their favorite champions.</p>
+                </div>
+                <img class="side-image" src="league-gameplay.jpg" alt="League of Legends Gameplay">
+            </div>
+            
+            <div class="article">
+                <div class="news-title">Esports and Competitive Scene</div>
+                <div class="news-content">
+                    <p>League of Legends' competitive scene is one of the most successful in esports history. The annual League of Legends World Championship gathers top teams from different regions to compete for the Summoner’s Cup and millions of dollars in prize money. With millions of concurrent viewers, it ranks among the most-watched esports events of all time.</p>
+                    <p>Several powerhouse teams, including T1, G2 Esports, and EDward Gaming, have left their mark on the competitive landscape. These teams have legendary players and coaches who have shaped the evolution of professional play. Recent player transfers and roster changes continue to keep fans engaged and speculating on the future of competitive League.</p>
+                </div>
+                <img class="side-image" src="league-esports.jpg" alt="League of Legends Esports Event" id="esports">
+            </div>
+
+            <div class="article">
+                <div class="news-title">T1 Welcomes New Coach Sebastian L. Damugo</div>
+                <div class="news-content">
+                    <p>In a surprising move, T1 has officially announced Sebastian L. Damugo as their new head coach. With years of experience in competitive gaming, Damugo brings a fresh perspective and strategic insight that could push T1 to new heights. His analytical approach to the game has garnered attention from fans and analysts alike.</p>
+                    <p>Damugo’s coaching philosophy revolves around adaptability and fostering strong synergy between players. He is known for his ability to refine team coordination and maximize player potential. His previous tenure with top-tier teams has proven his ability to develop strategies that counter evolving metas, giving T1 a potential edge in upcoming tournaments.</p>
+                </div>
+                <img class="side-image" src="t1-coach.png" alt="Sebastian L. Damugo - T1 Coach" id="coach">
+            </div>
+
+            <div class="article">
+                <div class="news-title">Patch Updates & Champion Spotlights</div>
+                <div class="news-content">
+                    <p><strong>Patch 14.5 Highlights:</strong> The latest patch introduces nerfs to overperforming champions and buffs to those struggling in the meta. Major item adjustments bring fresh strategies to the Rift. Champions like Jinx and Kha’Zix have received significant tuning updates, affecting their overall effectiveness in the current meta.</p>
+                    <p><strong>Champion Spotlight - Ahri:</strong> Ahri receives an update improving her mobility and burst potential. With refined mechanics, she remains a top pick for mid-lane players seeking both aggression and utility. Her newly enhanced Spirit Rush allows for better repositioning, making her an even bigger threat in team fights.</p>
+        
+                </div>
+                <img class="side-image" src="patch-update.jpg" alt="League Patch Update">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 The Summoner's Herald | All Rights Reserved
+    </footer>
+</body>
+</html> 
